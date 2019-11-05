@@ -1,37 +1,70 @@
 body {
     font-size: 28px;
-  }
-  header
-  {
-      background-color: gainsboro;
-  }
- nav ul {
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+}
+
+#menuPrincipal ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
+}
+
+#menuSecundario ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menuPrincipal li {
+    float: left;
+}
+
+#menuSecundario li {
     float: right;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-    
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
+}
 
-  /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_on_image */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.parallax {
+    background-image: url('E:/2º DAW/Diseño de Interfaces Web/Proyecto CSS/DIW-CSS/img/parallax_2.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax img {
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#logoNav img {
+    height: 60px;
+    width: 60px;
+}
