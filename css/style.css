@@ -5,6 +5,7 @@ body {
 nav {
     display: flex;
     background-color: #333;
+    flex-wrap: wrap;
 }
 
 #menuPrincipal ul {
@@ -45,7 +46,7 @@ li a:hover {
     background-color: #4CAF50;
 }
 
-.parallax {
+*/ .parallax {
     background-image: url('E:/2º DAW/Diseño de Interfaces Web/Proyecto CSS/DIW-CSS/img/parallax_2.jpg');
     height: 400px;
     background-attachment: fixed;
@@ -67,4 +68,21 @@ li a:hover {
 #logoNav img {
     height: 60px;
     width: 60px;
+}
+
+#menuPrincipal {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#menuPincipal ul li {
+    width: 200px;
+    height: 150px;
+    color: #FFF;
+    text-align: center;
+    line-height: 150px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #9B59B6;
 }
