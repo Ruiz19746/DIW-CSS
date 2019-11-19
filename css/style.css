@@ -2,51 +2,7 @@ body {
     font-size: 28px;
 }
 
-nav {
-    display: flex;
-    background-color: #333;
-    flex-wrap: wrap;
-}
-
-#menuPrincipal ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#menuSecundario ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#menuPrincipal li {
-    float: left;
-}
-
-#menuSecundario li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-*/ .parallax {
+.parallax {
     background-image: url('E:/2º DAW/Diseño de Interfaces Web/Proyecto CSS/DIW-CSS/img/parallax_2.jpg');
     height: 400px;
     background-attachment: fixed;
@@ -65,24 +21,73 @@ li a:hover {
     -webkit-transform: translate(-50%, -50%);
 }
 
-#logoNav img {
+.logo img {
     height: 60px;
     width: 60px;
 }
 
-#menuPrincipal {
+
+/* NAv */
+
+#flex-container {
     display: flex;
-    justify-content: flex-start;
 }
 
-#menuPincipal ul li {
-    width: 200px;
-    height: 150px;
+#flex-container div {
+    width: 33.3%;
     color: #FFF;
     text-align: center;
-    line-height: 150px;
-    margin: 10px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #9B59B6;
+    font-family: Arial;
+    /* background-color: cornflowerblue; */
 }
+
+#flex-container .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* background-color: #333; */
+}
+
+#flex-container .menu li {
+    float: left;
+}
+
+#flex-container .menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#flex-container .menu2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+#flex-container .menu2 li {
+    float: right;
+}
+
+#flex-container .menu2 li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#flex-container .logo {
+    /* background-color: black; */
+    color: rebeccapurple;
+    text-align: center;
+}
+
+
+/* ejemplo del nav que quiero hacer */
+
+
+/* https://codepen.io/RomanKl/pen/LWmvOK */
